@@ -1,7 +1,7 @@
 Summernote Plugins
 =============
 
-Some plugins for the [Summernote WYSIWYG|https://github.com/summernote/summernote/]
+Some plugins for the [Summernote WYSIWYG](https://github.com/summernote/summernote/)
 
 Template
 -------------
