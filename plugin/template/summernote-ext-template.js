@@ -50,9 +50,11 @@
               var path    = options.path + '/' + value + '.html';
 
               $.get(path)
-              .done(function (data) {
-                context.invoke('editor.pasteHTML', data);
-              }).fail(function () {
+                  .done(function (data) {
+                    var node = document.createElement('span');
+                    node.innerHTML = data;
+                    context.invoke('editor.insertNode', node);
+                  }).fail(function () {
                 alert('template not found in ' + path);
               });
             }
