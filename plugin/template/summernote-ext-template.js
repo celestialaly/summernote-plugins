@@ -28,6 +28,17 @@
       //  - you can create a button with `ui.button`
       var ui      = $.summernote.ui;
       var options = context.options.template;
+      var defaultOptions = {
+        label: "Template",
+        tooltip: "Insert Template"
+      };
+
+      // Assign default values if not supplied
+      for (var propertyName in defaultOptions) {
+        if (options.hasOwnProperty(propertyName) === false) {
+          options[propertyName] = defaultOptions[propertyName];
+        }
+      }
 
       // add hello button
       context.memo('button.template', function () {
@@ -35,8 +46,8 @@
         var button = ui.buttonGroup([
           ui.button({
             className: 'dropdown-toggle',
-            contents: '<span class="template"/> Template <span class="caret"></span>',
-            tooltip: 'Insert Template',
+            contents: '<span class="template"/> ' + options.label + ' <span class="caret"></span>',
+            tooltip: options.tooltip,
             data: {
               toggle: 'dropdown'
             }
