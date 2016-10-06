@@ -56,6 +56,8 @@
             className: 'dropdown-template',
             items: options.list,
             click: function (event) {
+              event.preventDefault();
+              
               var $button = $(event.target);
               var value   = $button.data('value');
               var path    = options.path + '/' + value + '.html';
