@@ -65,7 +65,7 @@
               $.get(path)
                   .done(function (data) {
                     var node = document.createElement('span');
-                    node.innerHTML = data;
+                    node.innerHTML = data + '<p>&nbsp;</p>';
                     context.invoke('editor.insertNode', node);
                   }).fail(function () {
                 alert('template not found in ' + path);
