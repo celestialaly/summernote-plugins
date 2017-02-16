@@ -34,10 +34,16 @@ $('#summernote').summernote({
     ],
     template: {
         path: '/summernote/tpls', // path to your template folder
-        list: [ // list of your template (without the .html extension)
-            'template1',
-            'template2'
-        ]
+        
+        /*
+         * list of your templates
+         * key is the html file name (without .html extension)
+         * value is the label shown in the editor
+         */
+        list: {
+            'label-success': 'Success label', // path is : /summernote/tpls/label-success.html
+            'label-error': 'Error label'
+        }
     },
 });
 ```
