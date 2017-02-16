@@ -20,8 +20,8 @@ You must copy the plugin/template folder into your local summernote plugin folde
 You have to create a folder which will contains your template in **.html** files.
 
 Example :
-- summernote/tpls/template1.html
-- summernote/tpls/template2.html
+- summernote/tpls/label-success.html
+- summernote/tpls/label-error.html
 
 ### 3) Configure the plugin
 
