@@ -1,0 +1,27 @@
+{
+  "name": "summernote-plugins",
+  "version": "1.0.0",
+  "description": "Summernote plugins (Template plugin)",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nanakii/summernote-plugins.git"
+  },
+  "keywords": [
+    "summernote",
+    "plugin",
+    "template"
+  ],
+  "author": "Raphaël Amourette",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nanakii/summernote-plugins/issues"
+  },
+  "homepage": "https://github.com/Nanakii/summernote-plugins#readme"
+}
